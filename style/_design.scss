@@ -290,3 +290,37 @@ header {
         padding-bottom: 0;
     }
 }
+
+#contact{
+    section.form{
+        flex: 1 1 500px;
+        border-right: 1px solid #000;
+        @media (max-width: 768px) {
+            border: none;
+        }
+        form{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        div{
+            label{
+                font-size: 1.4rem;
+            }
+            input,textarea{
+                background-color: #FCF8E8;
+                font-size: 1.25rem;
+                padding: 0.5rem -0.25rem;
+                border: none;
+                width: 30vw;
+                &:focus{
+                    outline: 2px solid #ed762d;
+                }
+            }
+            textarea{
+                vertical-align: top;
+            }
+        }
+    }
+}
