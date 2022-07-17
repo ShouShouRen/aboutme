@@ -294,6 +294,29 @@ header {
 }
 
 #contact {
+    main{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ECB390;
+            top: 20px;
+            left: -100px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #F5EDDC;
+            bottom: 20px;
+            right: -100px;
+        }
+    }
     div.form {
         flex: 1 1 500px;
         border-right: 4px solid #ECB390;
@@ -325,7 +348,7 @@ header {
                 margin: 5px;
                 padding: 0.5rem 0.25rem;
                 border: none;
-                width: 80%;
+                width: 100%;
 
                 &:focus {
                     outline: 2px solid #ed762d;
@@ -335,9 +358,16 @@ header {
             textarea {
                 vertical-align: top;
             }
-            button{
-                
-            }
+        }
+        button{
+            align-self: center;
+            background-color: #CEE5D0;
+            color: #4D7451;
+            border: none;
+            cursor: pointer;
+            padding: 0.75rem 1rem;
+            font-size: .5rem;
+            border-radius: 8px;
         }
     }
 
