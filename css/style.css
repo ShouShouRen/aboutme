@@ -2481,20 +2481,20 @@ header nav ul li a {
   padding-bottom: 0;
 }
 
-#contact section.form {
+#contact div.form {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 500px;
           flex: 1 1 500px;
-  border-right: 1px solid #000;
+  border-right: 4px solid #ECB390;
 }
 
 @media (max-width: 768px) {
-  #contact section.form {
+  #contact div.form {
     border: none;
   }
 }
 
-#contact section.form form {
+#contact div.form form {
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2503,27 +2503,44 @@ header nav ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#contact section.form div label {
+#contact div.form div {
+  padding: 0.2rem;
+}
+
+#contact div.form div label {
   font-size: 1.4rem;
 }
 
-#contact section.form div input, #contact section.form div textarea {
+#contact div.form div input,
+#contact div.form div textarea {
   background-color: #FCF8E8;
   font-size: 1.25rem;
-  padding: 0.5rem -0.25rem;
+  margin: 5px;
+  padding: 0.5rem 0.25rem;
   border: none;
-  width: 30vw;
+  width: 80%;
 }
 
-#contact section.form div input:focus, #contact section.form div textarea:focus {
+#contact div.form div input:focus,
+#contact div.form div textarea:focus {
   outline: 2px solid #ed762d;
 }
 
-#contact section.form div textarea {
+#contact div.form div textarea {
   vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  #contact .contact {
+    margin-top: 110px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
